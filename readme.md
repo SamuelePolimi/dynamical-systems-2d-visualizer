@@ -71,18 +71,18 @@ An example of a possible output is:
 The class `RobotLink` defines a robotic arm composed by a single link with mass `m` length `l` and gravitational acceleration `g`.
 The system can be actuated by using a PD controller with gravitational compensation.
 
-The gravitational compensation term (K0) allows to make sure that a desired configuration `theta_d` is an equilibrium point.  
-The proportional term (K1) inputs a torque proportional to the error between the desired angle and the current one  
-The derivative term (K2) inputs a torque proportional to the derivative of the error  
+The "gravitational compensation" term (`K0`) allows to make sure that a desired configuration `theta_d` is an equilibrium point. This term is actually different from classic gravitational compensation, since this method only compensate the gravity for a desired robot configuration `theta`. Can the student write a classic gravitational compensation that work simultaneously for all configuration? How this compensation term affect the stability of `K1` and `K2`?
+The proportional term (`K1`) inputs a torque proportional to the error between the desired angle and the current one  
+The derivative term (`K2`) inputs a torque proportional to the derivative of the error  
 
 You can play with different settings to see how the angular velocity `omega` and the angle `theta` change in time.
 
-Of course, you can write your own controller too!
+Of course, you can write your own controller too! :) 
 
 Extensions
 ----------
 
-By taking inspiration from 1-link robot arm and Lotka-Volterra, you can write your own (2D) system to visualize!
+By taking inspiration from 1-link robot arm and Lotka-Volterra, you can write your own (2D) system and render it!
 
 
 
