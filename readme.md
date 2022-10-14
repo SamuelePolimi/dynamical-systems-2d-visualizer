@@ -19,7 +19,8 @@ Visualize phase + trajectories
 -----------------------------
 
 Use either `visualizer.gif_trajectory` or `visualizer.show_trajectory` where `visualizer` is an object of the class `VisualizeDynamics2D`.
-A few examples:
+A few examples:  
+
 ![alt text](example/global_phase1.gif)
 ![alt text](example/global_phase.gif)
 ![alt text](example/local_phase.gif)
